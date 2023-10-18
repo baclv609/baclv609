@@ -24,14 +24,16 @@ header a {
     background-position: center left;
     height: 675px;
     border-radius: 0px 0px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
 
 .about-benner-container {
-    padding-top: 403px;
     width: 785px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .benner-text-h1 {
@@ -129,7 +131,7 @@ header a {
 
 .cars-container .row p {
     color: var(--neutrals-3, #4A4A4A);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 140%;
     /* 28px */
@@ -149,11 +151,16 @@ header a {
     font-weight: 700;
     line-height: 140%;
     padding: 14px 24px;
+    margin-top: 24px;
     background: #FF3B3F;
     border-radius: 8px;
     text-align: right;
+    text-decoration: none;
 }
+.cars-container .row .cars-btn a:hover{
+    background: #da4447;
 
+}
 /* end Dịch vụ của chúng tôi */
 .cars-items-about {
     display: flex;
@@ -259,11 +266,20 @@ header a {
 
 .banner-text .p {
     margin-top: 40px;
+    font-size: 44px;
+    font-weight: 700;
+    color: #FFF;
 }
-
 .banner-text-heading3 {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.text-heading3 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -285,7 +301,13 @@ header a {
     font-size: 16px;
     font-weight: 500;
 }
-
+/* Hình ảnh thực tế */
+.hinhanh{
+    font-weight: 700;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 80px;
+}
 /*  Tại sao nên chọn chúng tôi */
 .container-us {
     display: flex;
@@ -320,7 +342,6 @@ header a {
 
     .about-benner-container {
         width: 100%;
-        padding-top: 170px;
     }
 
     .benner-text-p {
@@ -345,7 +366,10 @@ header a {
     /*  */
     .cars-container {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0;
         column-gap: 20px;
     }
@@ -428,7 +452,7 @@ header a {
         margin: auto;
     }
 
-    .banner-text h3 {
+    .banner-text .p {
         font-size: 24px;
     }
 
@@ -453,6 +477,21 @@ header a {
     .container-us .item .lienhe-about {
         font-size: 12px;
     }
+    /* những con số biết nói */
+    
+.banner-text-heading3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+
+.text-heading3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 }
 
 /* table: width >= 740px and width < 1024px */
@@ -465,7 +504,7 @@ header a {
     .about-benner-container {
         width: 100%;
         margin: auto;
-        padding: 70px;
+        /* padding: 70px; */
     }
 
     .benner-text-h1 {
@@ -494,4 +533,4 @@ header a {
 }
 
 /* pc: width >= 1024px */
-@media only screen and (min-width: 64em) {}
+/* @media only screen and (min-width: 64em) {} */
